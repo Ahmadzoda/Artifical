@@ -1,0 +1,398 @@
+@import 'configuration';
+*{
+    margin: 0;
+}
+.container{
+    width: 1493px;
+    @include sm{
+        width: 480px;
+    }
+}
+.navbar{
+    padding-top: 20px;
+    background-color: #0A121F;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    @include sm{
+        height: auto;
+        flex-direction: column;
+    }
+    .navbar-left{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+       
+         img{
+            width: 40px;
+            height: 50px;
+            padding-top: 7px;
+         }
+        h1{
+            color:  #3A68B8;
+            font-size: 30px;
+            padding-top: 15px;
+        }
+    }
+    .navbar-right{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        gap: 50px;
+        @include sm{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            color: white;
+            margin: 10px;
+            font-size: 25px;
+            @include sm{
+                display: block;
+                padding-top: 5px;
+            }
+            &:hover{
+               color: #3A68B8;
+            }
+        }
+        .one{
+            width: 100px;
+            height: 40px;
+            background-color: #3A68B8;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            &:hover{
+                background-color: white;
+            }
+            p{
+                padding-top: 8px;
+                &:hover{
+                    color: #3A68B8;
+                }
+            }
+        }
+    }
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    background-color: #0A121F;
+    height: 680px;
+    @include sm{
+        flex-direction: column;
+        height: auto;
+    }
+    .content-left{
+        padding-top: 150px;
+        @include sm{
+            padding-top: 80px;
+          }
+        h3{
+            color: #3A68B8;
+            font-family:Open Sans; 
+            padding-bottom: 15px;
+            @include sm{
+                text-align: center;
+            }
+        }
+        h1{
+            color: white;
+            font-family: Open Sans;
+            font-weight: 800;
+            font-size: 60px;
+            padding-bottom: 20px;
+            @include sm{
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        p{
+            color: #FFFFFF;
+            @include sm{
+                text-align: center;
+            }
+        }
+        .xat{
+            display: flex;
+            justify-content: center;
+          padding-right: 200px;
+          padding-top: 30px;
+          gap: 100px;
+          @include sm{
+            flex-direction: column;
+           align-items: center;
+          }
+          .ooo{
+            @include sm{
+               padding-left: 200px;
+              }
+          }
+            .xat-one{
+                background-color: #3A68B8;
+                color: white;
+                width: 100px;
+                height: 38px;
+                text-align: center;
+                &:hover{
+                    background-color: white;
+                }
+                p{
+                    padding-top: 8px;
+                    &:hover{
+                        color: #3A68B8;
+                    }
+                }
+            }
+            .xat-two{
+                background-color: #3A68B8;
+                color: white;
+                width: 130px;
+                height: 38px;
+                text-align: center;
+                &:hover{
+                    background-color: white;
+                }
+                p{
+                    padding-top: 8px;
+                    &:hover{
+                        color: #3A68B8;
+                    }
+                }
+            }
+        }
+        
+
+    }
+    .content-right{
+        padding-top: 40px;
+        @include sm{
+            padding-top: 10px;
+          }
+          img{
+            @include sm{
+               width: 100%;
+               height: auto;
+              }
+          }
+    }
+}
+.pictures{
+    background-color: #0A121F;
+    padding-bottom: 70px;
+    .pic{
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        gap: 50px;
+        @include sm{
+            flex-direction: column;
+           align-items: center;
+          }
+    }
+}
+.apply{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #020A18;
+    @include sm{
+        flex-direction: column;
+       align-items: center;
+      }
+    .apply-right{
+        padding-top: 100px;
+        h1{
+            color: white;
+            font-size: 55px;
+            font-family:Open Sans; 
+            font-weight: 700;
+            padding-bottom: 25px;
+            @include sm{
+               font-size: 35px;
+               text-align: center;
+              }
+        }
+        p{
+            color: #FFFFFF;
+        }
+        .learn{
+            padding-top: 40px;
+            @include sm{
+                padding-left: 110px;
+               }
+            .lea{
+                width: 130px;
+                height: 42px;
+                background-color: #3A68B8;
+                color: white;
+                text-align: center;
+               
+                &:hover{
+                    background-color: #FFFFFF;
+                }
+                p{
+                    padding-top: 8px;
+                    font-size: 20px;
+                    &:hover{
+                        color: #3A68B8;
+                    }
+                }
+            }
+        }
+    }
+    .apply-left{
+       img{
+        width: 500px;
+        height: 500px;
+        @include sm{
+            width: 100%;
+            height: auto;
+          }
+       }
+    }
+}
+.complate{
+    padding-top: 100px;
+    background-color: #020A18;
+    .comp{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        @include sm{
+            flex-direction: column;
+            align-items: center ;
+           }
+        .cout{
+            background-color: #101725;
+            width: 260px;
+            height: 300px;
+            border-radius: 10px;
+            
+            img{
+                width: 60px;
+                height: 55px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 100px;
+            }
+            h2{
+                color: white;
+                text-align: center;
+                margin: 10px;
+            }
+            p{
+                color: #FFFFFF;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+}
+.last{
+    background-color: #020A18;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    @include sm{
+       flex-direction: column;
+       }
+    .last-left{
+        h1{
+            color: #FFFFFF;
+            padding-bottom:20px ;
+            font-size: 50px;
+            @include sm{
+                text-align: center;
+                font-size: 35px;
+               }
+        }
+        p{
+            color: #FFFFFF;
+            font-size: 18px;
+            padding-top: 20px;
+            @include sm{
+               text-align: center;
+               font-size: 15px;
+               }
+        }
+    }
+    .last-right{
+        img{
+            width: 600px;
+            height: 500px;
+            @include sm{
+               width: 100%;
+               height: auto;
+               padding-top: 30px;
+               }
+        }
+    }
+}
+.finish{
+    padding-top: 70px;
+    background-color: #070E1C;
+    height: 350px;
+    @include sm{
+        height: auto;
+       }
+   .end{
+    
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    @include sm{
+        align-items: center;
+        flex-direction: column;
+       }
+    
+    .end-one{
+        img{
+            width: 30px;
+            height: 40px;
+            padding-left: 95px;
+        }
+        h2{
+            padding-top: 20px;
+            color: white;
+            &:hover{
+                color: #3A68B8;
+            }
+        }
+        p{
+            padding-top: 20px;
+            color: #FFFFFF;
+           
+        }
+        a{
+            color: #FFFFFF;
+            line-height: 30px;
+        }
+    }
+    .end-one-1{
+        h2{
+            padding-top: 20px;
+            color:white;
+            &:hover{
+                color: #3A68B8;
+            }
+        }
+        p{
+            padding-top: 10px;
+            color: #FFFFFF;  
+            padding-bottom: 20px;
+        }
+        a{
+            margin: 10px;
+            font-size: 18px;
+           color: #FFFFFF;
+        }
+    }
+   } 
+}
